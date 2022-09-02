@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Kamień, papier i nożyce</title>
+        <meta name="description" content="Gra w kamień, papier i nożyce">
+        <meta name="author" content='Krzysztof Kolanus'>
+        <link rel="stylesheet" href="game.css">
+        <link rel="icon" href="fav_game.ico">
+    </head>
+    <body>
+        <div class="question">
+            <h1>
+                Pykniemy w kamień, papier, nożyce mordeczko?
+            </h1>
+        </div>
+
+        <div class="grid-container-yes">
+            <div class="grid-item">
+                <button class="button-yes">
+                    <span>
+                        Pewnie, <br>czemu nie?
+                    </span>    
+                </button>
+            </div>
+            <div class="grid-item">
+                <button class="button-no">
+                    <span>
+                        Nie... <br>może innym razem
+                    </span>
+                </button>
+            </div>
+        </div>
+
+        <div class="grid-container-sure">
+            <div class="grid-item">
+                <button class="button-sure-yes">
+                    <span>
+                        Ok, <br>jednak chcę grać dalej
+                    </span>    
+                </button>
+            </div>
+            <div class="grid-item">
+                <button class="button-sure-no">
+                    <span>
+                        Kończymy, <br>jestem pewien
+                    </span>
+                </button>
+            </div>
+        </div>
+
+        <div class="grid-container-choice">
+            <div class="grid-item">
+                <button class="button-rock"><img src="game_images/rock.png" alt="rock" width="120px"></button>
+            </div>
+            <div class="grid-item">
+                <button class="button-paper"><img src="game_images/paper.png" alt="paper" width="120px"></button>
+            </div>
+            <div class="grid-item">
+                <button class="button-scissors"><img src="game_images/scissors.png" alt="paper" width="120px"></button>
+            </div>
+        </div>
+
+        <div class="anwser">
+        </div>
+
+        <div class="grid-computer-choice">
+        </div>
+
+            <table>
+                <tr>
+                    <th>
+                        Gracz
+                    </th>
+                    <th>
+                        Komputer
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="scorePlayer">
+                            <span>0</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="scoreComputer">
+                            <span>0</span>
+                        </div>
+                    </td>
+                </tr>
+            </table>  
+        <script src="game_func.js"></script>
+    </body>

@@ -1,0 +1,95 @@
+body {
+    background: rgb(5,255,0);
+    background: linear-gradient(90deg, rgba(5,255,0,1) 0%, rgba(0,0,0,1) 50%, rgba(0,255,8,1) 100%);
+    font-family: Garamond, Helvetica, sans-serif;
+}
+
+.grid-container-yes {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 20px;
+    justify-content: space-evenly;
+    justify-items: space-evenly;
+}
+.grid-container-sure {
+    display: none;
+    grid-template-columns: auto auto;
+    padding: 20px;
+    justify-content: space-evenly;
+    justify-items: space-evenly;
+}
+
+.grid-container-choice {
+    display: none;
+    grid-template-columns: auto auto auto;
+    padding: 20px;
+    justify-content: space-evenly;
+    justify-items: space-evenly;
+    position: relative;
+    top: 0px;
+}
+
+.grid-computer-choice {
+    display: grid;
+    padding: 20px;
+    justify-content: center;
+    justify-items: auto;
+    position: relative;
+}
+
+.grid-item {
+    width: 10%;
+}
+h1 {
+    color: aliceblue;
+    text-align: center;
+}
+
+.button-yes, .button-no, .button-sure-no, .button-sure-yes{
+    width: 295px;
+    height: 150px;
+    background-color: #000000;
+    border: 1px solid aliceblue;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+}
+.button-yes:hover, .button-no:hover, .button-sure-no:hover, .button-sure-yes:hover{
+    background-color: #002501;
+}
+
+.button-rock, .button-paper, .button-scissors{
+    background-color: aliceblue;
+    border: 2px solid black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+}
+
+.button-rock:hover, .button-paper:hover, .button-scissors:hover{
+    background-color: rgb(132, 255, 138);
+}
+
+table, th, td {
+    border: 1px solid;
+    width: 20%;
+    text-align: center;
+}
+
+th {
+    background-color: rgb(255, 0, 0);
+}
+
+table {
+    border-collapse: collapse;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    margin-left: 40%; 
+    margin-right: 40%;
+    color: aliceblue;
+    font-size: 25px;
+}
